@@ -12,7 +12,7 @@ function loadMore_Pagination(deploy_btn_div, item_class, item_limit) {
             e.preventDefault();
             $(item_class + ":hidden").slice(0, item_limit).slideDown();
             if ($(item_class + ":hidden").length == 0) {
-                $("#load").fadeOut('slow');
+                $("#loadMore").fadeOut('slow');
             }
 
             $('html,body').animate({
